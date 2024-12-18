@@ -1,0 +1,102 @@
+.hero {
+    width: 100%;
+   height: auto; /* Ensures the section doesn't overflow */
+    background-color: var(--mainColor);
+    display: flex; /* To ensure the height constraint applies */
+    
+  }
+  
+  .row {
+    margin: 0; /* Remove unwanted margin */
+  }
+  
+.container-fluid{
+    padding-right: 0;
+}
+  
+.intro small{
+    letter-spacing: 1rem;
+    color: grey;
+}
+.intro h1{
+    font-size: 3.3rem;
+    font-weight: bold;
+}
+.intro p{
+    color: grey;
+    
+}
+.intro button{
+    background-color: var(--greenColor);
+    padding:10px 10px 10px 10px;
+    color: aliceblue;
+    border-radius:18px ;
+    width: 40%;
+    border: none;
+
+}
+.numbers .first{
+    border-right: 3px solid black;
+    padding-right: 3rem;
+}
+.banner{
+    height: 15vh;
+    background-color: var(--greyColor);
+}
+.imgcontainer{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin-top: -2%;
+}
+.imgcontainer img{
+    width: 95%;
+    height: 20%;
+    object-fit: cover;
+}
+.ii{
+    height: 95%;
+}
+.intro h1 span{
+    color: var(--greenColor);
+}
+
+.brand{
+    width: 80%;
+    height: 80%;
+}
+
+
+.slider-container {
+    width: 100%; 
+    overflow: hidden; 
+    background-color: var(--greyColor); 
+    padding: 10px 0; 
+    position: relative;
+}
+
+    .slider-track {
+    display: flex;
+    justify-content: space-around; 
+    width: 100%; 
+    animation: moveSlider 10s linear infinite; 
+}
+
+
+    .slider-image {
+    width: 200px; 
+    margin-right: 20px;   
+}
+
+
+@keyframes moveSlider {
+    0% {
+    transform: translateX(0);   
+    }
+    50% {
+    transform: translateX(-30%);
+    }
+    100% {
+        transform: translateX(0%); 
+    }
+}

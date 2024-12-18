@@ -1,0 +1,17 @@
+.review-card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff;
+    margin: 15px auto;
+  }
+  .customer-section {
+    background-color: #ffffff;
+    padding: 50px 0;
+  }
+  .active{
+    color: black;
+  }
+  .bi-check-circle-fill{
+    color: var(--greenColor);
+  }
