@@ -1,0 +1,424 @@
+{
+    "categories": [
+      {
+        "categoryName": "Football Gear",
+        "items": [
+          {
+            "id": 1,
+            "title": "Nike Football",
+            "image": "https://example.com/images/nike-football.jpg",
+            "name": "Nike Official Football",
+            "rating": 4.8,
+            "price": 45.00,
+            "description": "Durable football for professional games.",
+            "size": ["5"],
+            "colors": ["White", "Black"],
+            "brand": "Nike",
+            "category": "Balls"
+          },
+          {
+            "id": 2,
+            "title": "Adidas Football Shoes",
+            "image": "https://example.com/images/adidas-football-shoes.jpg",
+            "name": "Predator",
+            "rating": 4.7,
+            "price": 120.00,
+            "description": "Comfortable and high-performance football shoes.",
+            "size": [40, 41, 42, 43, 44],
+            "colors": ["Red", "Black"],
+            "brand": "Adidas",
+            "category": "Shoes"
+          },
+          {
+            "id": 3,
+            "title": "Puma Football Jersey",
+            "image": "https://example.com/images/puma-football-jersey.jpg",
+            "name": "Team Jersey",
+            "rating": 4.6,
+            "price": 50.00,
+            "description": "Breathable and comfortable football jersey.",
+            "size": ["M", "L", "XL"],
+            "colors": ["Blue", "White"],
+            "brand": "Puma",
+            "category": "Jerseys"
+          },
+          {
+            "id": 4,
+            "title": "Under Armour Shin Guards",
+            "image": "https://example.com/images/under-armour-shin-guards.jpg",
+            "name": "Shin Guards Pro",
+            "rating": 4.8,
+            "price": 30.00,
+            "description": "High protection for your legs during intense games.",
+            "size": ["M", "L"],
+            "colors": ["Black", "White"],
+            "brand": "Under Armour",
+            "category": "Accessories"
+          },
+          {
+            "id": 5,
+            "title": "Wilson Football",
+            "image": "https://example.com/images/wilson-football.jpg",
+            "name": "NFL Game Ball",
+            "rating": 4.9,
+            "price": 80.00,
+            "description": "Official NFL game ball.",
+            "size": ["Size 9"],
+            "colors": ["Brown"],
+            "brand": "Wilson",
+            "category": "Balls"
+          },
+          {
+            "id": 6,
+            "title": "Nike Training Shorts",
+            "image": "https://example.com/images/nike-training-shorts.jpg",
+            "name": "Pro Training Shorts",
+            "rating": 4.7,
+            "price": 35.00,
+            "description": "Comfortable shorts for football training.",
+            "size": ["M", "L", "XL"],
+            "colors": ["Black", "Grey"],
+            "brand": "Nike",
+            "category": "Clothing"
+          },
+          {
+            "id": 7,
+            "title": "Nike Football Gloves",
+            "image": "https://example.com/images/nike-football-gloves.jpg",
+            "name": "Grip Football Gloves",
+            "rating": 4.8,
+            "price": 25.00,
+            "description": "High-grip gloves for better handling of the ball.",
+            "size": ["S", "M", "L"],
+            "colors": ["White", "Black"],
+            "brand": "Nike",
+            "category": "Accessories"
+          },
+          {
+            "id": 8,
+            "title": "Adidas Football Socks",
+            "image": "https://example.com/images/adidas-football-socks.jpg",
+            "name": "Compression Socks",
+            "rating": 4.5,
+            "price": 15.00,
+            "description": "Compression socks for enhanced leg performance.",
+            "size": ["M", "L"],
+            "colors": ["White", "Black"],
+            "brand": "Adidas",
+            "category": "Clothing"
+          },
+          {
+            "id": 9,
+            "title": "Puma Football Backpack",
+            "image": "https://example.com/images/puma-football-backpack.jpg",
+            "name": "Football Backpack",
+            "rating": 4.6,
+            "price": 45.00,
+            "description": "Spacious football backpack for all your gear.",
+            "size": ["One Size"],
+            "colors": ["Black", "Red"],
+            "brand": "Puma",
+            "category": "Bags"
+          },
+          {
+            "id": 10,
+            "title": "Reebok Football Shoes",
+            "image": "https://example.com/images/reebok-football-shoes.jpg",
+            "name": "Speed Control",
+            "rating": 4.7,
+            "price": 100.00,
+            "description": "Football shoes designed for speed and comfort.",
+            "size": [40, 41, 42, 43],
+            "colors": ["Black", "Silver"],
+            "brand": "Reebok",
+            "category": "Shoes"
+          }
+        ]
+      },
+      {
+        "categoryName": "Basketball Gear",
+        "items": [
+          {
+            "id": 1,
+            "title": "Spalding Basketball",
+            "image": "https://example.com/images/spalding-basketball.jpg",
+            "name": "Official Game Ball",
+            "rating": 4.8,
+            "price": 80.00,
+            "description": "NBA official size and weight basketball.",
+            "size": ["7"],
+            "colors": ["Orange"],
+            "brand": "Spalding",
+            "category": "Balls"
+          },
+          {
+            "id": 2,
+            "title": "Nike Basketball Shoes",
+            "image": "https://example.com/images/nike-basketball-shoes.jpg",
+            "name": "LeBron 20",
+            "rating": 4.9,
+            "price": 150.00,
+            "description": "High-performance basketball shoes for all courts.",
+            "size": [40, 41, 42, 43, 44],
+            "colors": ["Black", "Red"],
+            "brand": "Nike",
+            "category": "Shoes"
+          },
+          {
+            "id": 3,
+            "title": "Adidas Basketball Jersey",
+            "image": "https://example.com/images/basketball-jersey.jpg",
+            "name": "Team Jersey",
+            "rating": 4.7,
+            "price": 60.00,
+            "description": "Lightweight and breathable basketball jersey.",
+            "size": ["M", "L", "XL"],
+            "colors": ["Blue", "White"],
+            "brand": "Adidas",
+            "category": "Jerseys"
+          }
+        ]
+      },
+      {
+        "categoryName": "Tennis Gear",
+        "items": [
+          {
+            "id": 1,
+            "title": "Wilson Tennis Racket",
+            "image": "https://example.com/images/tennis-racket.jpg",
+            "name": "Pro Staff",
+            "rating": 4.9,
+            "price": 250.00,
+            "description": "Professional tennis racket used by champions.",
+            "size": ["One Size"],
+            "colors": ["Black"],
+            "brand": "Wilson",
+            "category": "Rackets"
+          },
+          {
+            "id": 2,
+            "title": "Head Tennis Balls",
+            "image": "https://example.com/images/tennis-balls.jpg",
+            "name": "Tournament Balls",
+            "rating": 4.7,
+            "price": 15.00,
+            "description": "Pack of 3 tournament-quality tennis balls.",
+            "size": ["Standard"],
+            "colors": ["Yellow"],
+            "brand": "Head",
+            "category": "Balls"
+          },
+          {
+            "id": 3,
+            "title": "Nike Tennis Shoes",
+            "image": "https://example.com/images/tennis-shoes.jpg",
+            "name": "Court Lite",
+            "rating": 4.8,
+            "price": 120.00,
+            "description": "Durable and comfortable shoes for all courts.",
+            "size": [40, 41, 42, 43],
+            "colors": ["White", "Blue"],
+            "brand": "Nike",
+            "category": "Shoes"
+          }
+        ]
+      },
+      {
+        "categoryName": "Swimming Gear",
+        "items": [
+          {
+            "id": 1,
+            "title": "Speedo Swim Goggles",
+            "image": "https://i.pinimg.com/736x/07/2c/ac/072cacbe0eb367a9f2b39fe3d1027817.jpg",
+            "name": "Aqua Fit",
+            "rating": 4.7,
+            "price": 20.00,
+            "description": "Comfortable anti-fog swim goggles.",
+            "size": ["One Size"],
+            "colors": ["Blue", "Black"],
+            "brand": "Speedo",
+            "category": "Accessories"
+          },
+          {
+            "id": 2,
+            "title": "Arena Swim Cap",
+            "image": "https://example.com/images/swim-cap.jpg",
+            "name": "Silicone Cap",
+            "rating": 4.6,
+            "price": 10.00,
+            "description": "Durable and comfortable silicone swim cap.",
+            "size": ["One Size"],
+            "colors": ["Black", "Red"],
+            "brand": "Arena",
+            "category": "Accessories"
+          },
+          {
+            "id": 3,
+            "title": "Speedo Swimwear",
+            "image": "https://i.pinimg.com/736x/87/46/0b/87460bb31d3784fff773a0c670673589.jpg",
+            "name": "Endurance Plus",
+            "rating": 4.9,
+            "price": 50.00,
+            "description": "Comfortable and long-lasting swimwear.",
+            "size": ["S", "M", "L", "XL"],
+            "colors": ["Blue", "Black"],
+            "brand": "Speedo",
+            "category": "Clothing"
+          }
+          ,{
+            "id": 4,
+            "title": "Speedo Swimwear",
+            "image": "https://i.pinimg.com/736x/87/46/0b/87460bb31d3784fff773a0c670673589.jpg",
+            "name": "Endurance Plus",
+            "rating": 4.9,
+            "price": 50.00,
+            "description": "Comfortable and long-lasting swimwear.",
+            "size": ["S", "M", "L", "XL"],
+            "colors": ["Blue", "Black"],
+            "brand": "Speedo",
+            "category": "Clothing"
+          },
+           {
+            "id": 5,
+            "title": "Speedo Swimwear",
+            "image": "https://i.pinimg.com/736x/87/46/0b/87460bb31d3784fff773a0c670673589.jpg",
+            "name": "Endurance Plus",
+            "rating": 4.9,
+            "price": 50.00,
+            "description": "Comfortable and long-lasting swimwear.",
+            "size": ["S", "M", "L", "XL"],
+            "colors": ["Blue", "Black"],
+            "brand": "Speedo",
+            "category": "Clothing"
+          } ,
+          {
+            "id": 6,
+            "title": "Speedo Swimwear",
+            "image": "https://i.pinimg.com/736x/87/46/0b/87460bb31d3784fff773a0c670673589.jpg",
+            "name": "Endurance Plus",
+            "rating": 4.9,
+            "price": 50.00,
+            "description": "Comfortable and long-lasting swimwear.",
+            "size": ["S", "M", "L", "XL"],
+            "colors": ["Blue", "Black"],
+            "brand": "Speedo",
+            "category": "Clothing"
+          } ,
+          {
+            "id": 7,
+            "title": "Speedo Swimwear",
+            "image": "https://i.pinimg.com/736x/87/46/0b/87460bb31d3784fff773a0c670673589.jpg",
+            "name": "Endurance Plus",
+            "rating": 4.9,
+            "price": 50.00,
+            "description": "Comfortable and long-lasting swimwear.",
+            "size": ["S", "M", "L", "XL"],
+            "colors": ["Blue", "Black"],
+            "brand": "Speedo",
+            "category": "Clothing"
+          } ,
+          {
+            "id": 8,
+            "title": "Speedo Swimwear",
+            "image": "https://i.pinimg.com/736x/87/46/0b/87460bb31d3784fff773a0c670673589.jpg",
+            "name": "Endurance Plus",
+            "rating": 4.9,
+            "price": 50.00,
+            "description": "Comfortable and long-lasting swimwear.",
+            "size": ["S", "M", "L", "XL"],
+            "colors": ["Blue", "Black"],
+            "brand": "Speedo",
+            "category": "Clothing"
+          } ,{
+            "id":9,
+            "title": "Speedo Swimwear",
+            "image": "https://i.pinimg.com/736x/87/46/0b/87460bb31d3784fff773a0c670673589.jpg",
+            "name": "Endurance Plus",
+            "rating": 4.9,
+            "price": 50.00,
+            "description": "Comfortable and long-lasting swimwear.",
+            "size": ["S", "M", "L", "XL"],
+            "colors": ["Blue", "Black"],
+            "brand": "Speedo",
+            "category": "Clothing"
+          } ,{
+            "id": 10,
+            "title": "Speedo Swimwear",
+            "image": "https://i.pinimg.com/736x/87/46/0b/87460bb31d3784fff773a0c670673589.jpg",
+            "name": "Endurance Plus",
+            "rating": 4.9,
+            "price": 50.00,
+            "description": "Comfortable and long-lasting swimwear.",
+            "size": ["S", "M", "L", "XL"],
+            "colors": ["Blue", "Black"],
+            "brand": "Speedo",
+            "category": "Clothing"
+          }, {
+            "id":11,
+            "title": "Speedo Swimwear",
+            "image": "https://i.pinimg.com/736x/87/46/0b/87460bb31d3784fff773a0c670673589.jpg",
+            "name": "Endurance Plus",
+            "rating": 4.9,
+            "price": 50.00,
+            "description": "Comfortable and long-lasting swimwear.",
+            "size": ["S", "M", "L", "XL"],
+            "colors": ["Blue", "Black"],
+            "brand": "Speedo",
+            "category": "Clothing"
+          } ,
+          {
+            "id": 12,
+            "title": "Speedo Swimwear",
+            "image": "https://i.pinimg.com/736x/87/46/0b/87460bb31d3784fff773a0c670673589.jpg",
+            "name": "Endurance Plus",
+            "rating": 4.9,
+            "price": 50.00,
+            "description": "Comfortable and long-lasting swimwear.",
+            "size": ["S", "M", "L", "XL"],
+            "colors": ["Blue", "Black"],
+            "brand": "Speedo",
+            "category": "Clothing"
+          }
+          , {
+            "id": 13,
+            "title": "Speedo Swimwear",
+            "image": "https://i.pinimg.com/736x/87/46/0b/87460bb31d3784fff773a0c670673589.jpg",
+            "name": "Endurance Plus",
+            "rating": 4.9,
+            "price": 50.00,
+            "description": "Comfortable and long-lasting swimwear.",
+            "size": ["S", "M", "L", "XL"],
+            "colors": ["Blue", "Black"],
+            "brand": "Speedo",
+            "category": "Clothing"
+          }
+          , {
+            "id": 14,
+            "title": "Speedo Swimwear",
+            "image": "https://i.pinimg.com/736x/87/46/0b/87460bb31d3784fff773a0c670673589.jpg",
+            "name": "Endurance Plus",
+            "rating": 4.9,
+            "price": 50.00,
+            "description": "Comfortable and long-lasting swimwear.",
+            "size": ["S", "M", "L", "XL"],
+            "colors": ["Blue", "Black"],
+            "brand": "Speedo",
+            "category": "Clothing"
+          }, {
+            "id": 15,
+            "title": "Speedo Swimwear",
+            "image": "https://i.pinimg.com/736x/87/46/0b/87460bb31d3784fff773a0c670673589.jpg",
+            "name": "Endurance Plus",
+            "rating": 4.9,
+            "price": 50.00,
+            "description": "Comfortable and long-lasting swimwear.",
+            "size": ["S", "M", "L", "XL"],
+            "colors": ["Blue", "Black"],
+            "brand": "Speedo",
+            "category": "Clothing"
+          }
+        ]
+      }
+    ]
+  }
+  
