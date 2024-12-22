@@ -1,0 +1,122 @@
+.main{
+    width: 100%;
+    height: 100vh;
+    /* background-color: aqua; */
+    background-image: url("/images/body.jpg");
+}
+.main .container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main .main-content{
+width: 25%;
+min-height: 70%;
+background-color: rgb(250, 250, 250);
+display: flex;
+flex-direction: column;
+align-items: center;
+border-radius: 15px;
+box-shadow: 0.5px 0.5px 3px rgb(221, 221, 221);
+}
+.main .main-content .sign-in{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15%;
+}
+.main .main-content .sign-in .sign-in-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10%;
+
+}
+.main .main-content .sign-in .sign-in-content h2{
+font-weight: bold;
+
+}
+.main .main-content .sign-in .sign-in-content p{
+    color: grey;
+}
+.main .main-content .sign-in .sign-in-content #sign-up{
+    color: blue;
+    text-decoration: none;
+    margin-left: 5px;
+}
+.sign-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+.sign-buttons .google img, .sign-buttons .apple img{
+width: 15px;
+height: 15px;
+}
+.sign-buttons .google, .sign-buttons .apple{
+    font-weight: bold;
+    color: rgb(147, 146, 146);
+    padding: 10px 25px 10px 25px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 10px;
+    background-color: white;
+    border: 0.5px solid rgb(224, 223, 223);
+
+}
+.OR{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.OR hr{
+    width: 50%;
+    margin: 20px 0 20px 0;
+}
+.OR span{
+    padding: 5px;
+}
+.inputs{
+    display: flex;
+    flex-direction: column; 
+}
+input::placeholder{
+    padding: 10px;
+    color: rgb(172, 171, 171);
+}
+.inputs label{
+    margin-bottom: 5px;
+}
+.inputs input{
+    font-weight: bold;
+    height: 45px;
+    border-radius: 5px;
+    margin-bottom: 7%;
+}
+.inputs .pass{
+    display: flex;
+    justify-content: space-between;
+}
+.inputs .pass a{
+    text-decoration: none;
+    color: blue;
+}
+input[type='checkbox']{
+    width: 20px;
+    height: 20px;
+
+}
+.remember-checkbox{
+    display: flex;
+    gap: 5px;
+}
+.signInBtn{
+    padding:10px;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(50, 50, 248);
+    border-radius: 8px;
+}

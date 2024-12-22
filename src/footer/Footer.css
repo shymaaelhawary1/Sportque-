@@ -1,0 +1,76 @@
+/* Container Styling */
+.conn {
+    min-height: 60vh;
+    position: relative;
+  }
+  
+  .sub {
+    background-color: var(--greyColor, #333); /* Default grey color */
+    z-index: 3;
+    height: 250px;
+    color: white;
+    margin-bottom: -3%;
+    min-width: 55%;
+  }
+  
+  .sub h1 {
+    font-size: 2.1rem;
+    font-weight: bold;
+    padding: 10px;
+    margin: 0;
+  }
+  
+  /* Footer Styling */
+  .footer {
+    background-color: var(--mainColor, #f8f9fa);
+    padding: 30px 0;
+  }
+  
+  .footer-content ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-content ul li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-content ul li a {
+    text-decoration: none;
+    color: #555;
+    transition: color 0.3s;
+  }
+  
+  .footer-content ul li a:hover {
+    color: var(--greenColor, #8cbc4f);
+  }
+  
+  .footer-content h6 {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Payment Section */
+  .payment {
+    background-color: #ececec;
+  }
+  
+  .payment small {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  /* Phone Styling */
+  .phone {
+    color: var(--greenColor, #8cbc4f);
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  /* Responsive Fixes */
+  @media (max-width: 768px) {
+    .sub h1 {
+      font-size: 1.8rem;
+    }
+  }
+  

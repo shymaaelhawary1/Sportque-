@@ -1,0 +1,31 @@
+.categories{
+    width: 100%;
+    min-height: 80vh;
+    background-color: var(--greyColor);
+}
+.whiteContainer{
+    min-height: 70vh;
+    width: 85%;
+}
+.whiteContainer h1{
+    color: var(--greenColor);
+}
+.con{
+    background-color: var(--greenColor);
+    transition: 0.3s;
+    color: white;
+    border: 3px solid var(--greenColor);
+}
+.con:hover{
+    background-color: var(--mainColor);
+    color: var(--greenColor);
+    transform: scale(1.1);
+    cursor: pointer;
+    border: 3px solid;
+    border-image: linear-gradient(var(--greenColor), var(--mainColor)) 1;
+    clip-path: inset(0 round 7px);
+
+}
+.whiteContainer .row{
+    width: 85%;
+}
