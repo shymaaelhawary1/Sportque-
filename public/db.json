@@ -14,8 +14,7 @@
             "size": ["5"],
             "colors": ["White", "Black"],
             "brand": "Nike",
-            "category": "Balls",
-            "onSale": "true"
+            "category": "Balls"
           },
           {
             "id": 2,
@@ -41,9 +40,7 @@
             "size": ["M", "L", "XL"],
             "colors": ["Blue", "White"],
             "brand": "Puma",
-            "category": "Jerseys",
-            "onSale": "true"
-
+            "category": "Jerseys"
           },
           {
             "id": 4,
@@ -165,9 +162,7 @@
             "size": ["7"],
             "colors": ["Orange"],
             "brand": "Spalding",
-            "category": "Balls",
-            "onSale": "true"
-
+            "category": "Balls"
           },
           {
             "id": 2,
@@ -337,7 +332,7 @@
             "size": [40, 41, 42, 43, 44],
             "colors": ["Black", "Red"],
             "brand": "Nike",
-            "category": "Shoes"
+            "category": "Sneakers"
           },
           {
             "id": 16,
@@ -350,8 +345,12 @@
             "size": ["M", "L", "XL"],
             "colors": ["Blue", "White"],
             "brand": "Adidas",
-            "category": "Jerseys"
+            "category": "Training Gear"
           }
+
+
+
+          
         ]
       },
       {
@@ -359,197 +358,197 @@
         "items": [
           {
             "id": 1,
-            "title": "Wilson Tennis Racket",
+            "title": "Wilson Advanced Racket",
             "image": "https://i.pinimg.com/236x/ad/94/7e/ad947e6140585e26ba864b4b35c88024.jpg",
             "name": "Pro Staff",
-            "rating": 4.9,
-            "price": 250.00,
-            "description": "Professional tennis racket used by champions.",
+            "rating": 4.8,
+            "price": 270.00,
+            "description": "High-performance tennis racket designed for professionals.",
             "size": ["One Size"],
             "colors": ["Black"],
             "brand": "Wilson",
-            "category": "Rackets",
-            "onSale": "true"
-
+            "category": "Rackets"
           },
           {
             "id": 2,
-            "title": "Wilson Tennis Racket",
+            "title": "Wilson Pro Tennis Racket",
             "image": "https://i.pinimg.com/736x/24/4b/00/244b0099e5295cad389fece3ced4a7a7.jpg",
             "name": "Pro Staff",
-            "rating": 4.9,
-            "price": 250.00,
-            "description": "Professional tennis racket used by champions.",
+            "rating": 4.7,
+            "price": 260.00,
+            "description": "A classic tennis racket for elite players.",
             "size": ["One Size"],
             "colors": ["Black"],
             "brand": "Wilson",
-            "category": "Rackets"
-          },{
+            "category": "Tools"
+          },
+          {
             "id": 3,
-            "title": "Wilson Tennis Racket",
+            "title": "Wilson Precision Racket",
             "image": "https://i.pinimg.com/236x/de/63/e0/de63e04db947a6f2040b5e4520b8f9c8.jpg",
             "name": "Pro Staff",
-            "rating": 4.9,
-            "price": 250.00,
-            "description": "Professional tennis racket used by champions.",
+            "rating": 4.8,
+            "price": 265.00,
+            "description": "Engineered for unmatched precision and control.",
             "size": ["One Size"],
             "colors": ["Black"],
             "brand": "Wilson",
-            "category": "Rackets"
-          },{
+            "category": "Tools"
+          },
+          {
             "id": 4,
-            "title": "Wilson Tennis Racket",
+            "title": "Wilson Tournament Racket",
             "image": "https://i.pinimg.com/236x/fa/96/f8/fa96f8610411a7f76dbc8ae9610e99d7.jpg",
             "name": "Pro Staff",
-            "rating": 4.9,
-            "price": 250.00,
-            "description": "Professional tennis racket used by champions.",
+            "rating": 4.6,
+            "price": 280.00,
+            "description": "A racket designed for competitive tournaments.",
             "size": ["One Size"],
             "colors": ["Black"],
             "brand": "Wilson",
-            "category": "Rackets"
-          },{
+            "category": "Clothes"
+          },
+          {
             "id": 5,
-            "title": "Wilson Tennis Racket",
+            "title": "Wilson Champion Racket",
             "image": "https://i.pinimg.com/236x/2c/40/9c/2c409cf71e0ab43f8c8817d302eb646a.jpg",
             "name": "Pro Staff",
             "rating": 4.9,
-            "price": 250.00,
-            "description": "Professional tennis racket used by champions.",
+            "price": 290.00,
+            "description": "Used by champions, offering top-tier performance.",
             "size": ["One Size"],
             "colors": ["Black"],
             "brand": "Wilson",
-            "category": "Rackets",
-            "onSale": "true"
-
+            "category": "Rackets"
           },{
             "id": 6,
-            "title": "Wilson Tennis Racket",
+            "title": "Wilson Elite Racket",
             "image": "https://i.pinimg.com/236x/04/6e/c4/046ec4adb9d7712c23102fe8156df1c9.jpg",
             "name": "Pro Staff",
-            "rating": 4.9,
-            "price": 250.00,
-            "description": "Professional tennis racket used by champions.",
+            "rating": 4.7,
+            "price": 275.00,
+            "description": "Elite-level racket for professional athletes.",
             "size": ["One Size"],
             "colors": ["Black"],
             "brand": "Wilson",
-            "category": "Rackets"
-          },{
+            "category": "Sneakers"
+          },
+          {
             "id": 7,
-            "title": "Wilson Tennis Racket",
+            "title": "Wilson Signature Racket",
             "image": "https://i.pinimg.com/474x/d3/f0/4a/d3f04a3fd88da9de431de52ccd5eba74.jpg",
             "name": "Pro Staff",
-            "rating": 4.9,
-            "price": 250.00,
-            "description": "Professional tennis racket used by champions.",
+            "rating": 4.8,
+            "price": 285.00,
+            "description": "Signature racket made for serious tennis players.",
             "size": ["One Size"],
             "colors": ["Black"],
             "brand": "Wilson",
-            "category": "Rackets"
-          },{
+            "category": "Training Gear"
+          },
+          {
             "id": 8,
-            "title": "Wilson Tennis Racket",
+            "title": "Wilson Premium Racket",
             "image": "https://i.pinimg.com/236x/0a/f6/82/0af682802f31056caa8741b31d9d44c0.jpg",
             "name": "Pro Staff",
             "rating": 4.9,
-            "price": 250.00,
-            "description": "Professional tennis racket used by champions.",
+            "price": 300.00,
+            "description": "Premium racket for superior power and precision.",
             "size": ["One Size"],
             "colors": ["Black"],
             "brand": "Wilson",
-            "category": "Rackets",
-            "onSale": "true"
-
+            "category": "Rackets"
           },{
             "id": 9,
-            "title": "Wilson Tennis Racket",
+            "title": "Wilson Speed Racket",
             "image": "https://i.pinimg.com/236x/91/23/fe/9123fecf92a73684eed6f072e47c3ba1.jpg",
             "name": "Pro Staff",
             "rating": 4.9,
-            "price": 250.00,
-            "description": "Professional tennis racket used by champions.",
+            "price": 320.00,
+            "description": "A racket designed for speed and agility on the court.",
             "size": ["One Size"],
             "colors": ["Black"],
             "brand": "Wilson",
-            "category": "Rackets"
-          },{
+            "category": "Sneakers"
+          },
+          {
             "id": 10,
-            "title": "Wilson Tennis Racket",
+            "title": "Wilson Professional Racket",
             "image": "https://i.pinimg.com/236x/bc/9a/e0/bc9ae01580d1effd5d5e85fa04c3a6f3.jpg",
             "name": "Pro Staff",
             "rating": 4.9,
-            "price": 250.00,
-            "description": "Professional tennis racket used by champions.",
+            "price": 330.00,
+            "description": "Professional-grade racket for top-tier performance.",
             "size": ["One Size"],
             "colors": ["Black"],
             "brand": "Wilson",
-            "category": "Rackets"
-          },{
+            "category": "Accessories"
+          },
+          {
             "id": 11,
-            "title": "Wilson Tennis Racket",
+            "title": "Wilson Classic Racket",
             "image": "https://i.pinimg.com/236x/7c/89/26/7c8926eb2580a85db48d7e5a28ae4a34.jpg",
             "name": "Pro Staff",
-            "rating": 4.9,
-            "price": 250.00,
-            "description": "Professional tennis racket used by champions.",
+            "rating": 4.8,
+            "price": 310.00,
+            "description": "Classic racket with modern performance.",
             "size": ["One Size"],
             "colors": ["Black"],
             "brand": "Wilson",
-            "category": "Rackets",
-            "onSale": "true"
-
-
+            "category": "Rackets"
           },{
             "id": 12,
-            "title": "Wilson Tennis Racket",
+            "title": "Wilson Pro Elite Racket",
             "image": "https://i.pinimg.com/236x/8b/c1/12/8bc112a4875c0e88003700ed5ebf7b40.jpg",
             "name": "Pro Staff",
-            "rating": 4.9,
-            "price": 250.00,
-            "description": "Professional tennis racket used by champions.",
+            "rating": 4.7,
+            "price": 315.00,
+            "description": "Elite racket used by the best players worldwide.",
             "size": ["One Size"],
             "colors": ["Black"],
             "brand": "Wilson",
-            "category": "Rackets"
-          },{
+            "category": "Accessories"
+          },
+          {
             "id": 13,
-            "title": "Wilson Tennis Racket",
+            "title": "Wilson Precision Plus Racket",
             "image": "https://i.pinimg.com/736x/24/4b/00/244b0099e5295cad389fece3ced4a7a7.jpg",
             "name": "Pro Staff",
-            "rating": 4.9,
-            "price": 250.00,
-            "description": "Professional tennis racket used by champions.",
+            "rating": 4.8,
+            "price": 320.00,
+            "description": "Advanced racket for precise control and power.",
             "size": ["One Size"],
             "colors": ["Black"],
             "brand": "Wilson",
-            "category": "Rackets"
-          },{
+            "category": "Accessories"
+          },
+          {
             "id": 14,
-            "title": "Wilson Tennis Racket",
+            "title": "Wilson Master Racket",
             "image": "https://example.com/images/tennis-racket.jpg",
             "name": "Pro Staff",
             "rating": 4.9,
-            "price": 250.00,
-            "description": "Professional tennis racket used by champions.",
+            "price": 340.00,
+            "description": "Master-class racket for serious competition.",
+            "size": ["One Size"],
+            "colors": ["Black"],
+            "brand": "Wilson",
+            "category": "Accessories"
+          },
+          {
+            "id": 15,
+            "title": "Wilson Supreme Racket",
+            "image": "https://i.pinimg.com/236x/e6/ce/86/e6ce86216a5124c25e467785223c19f9.jpg",
+            "name": "Pro Staff",
+            "rating": 4.9,
+            "price": 350.00,
+            "description": "Supreme quality racket for unbeatable performance.",
             "size": ["One Size"],
             "colors": ["Black"],
             "brand": "Wilson",
             "category": "Rackets"
-          },{
-            "id": 15,
-            "title": "Wilson Tennis Racket",
-            "image": "https://i.pinimg.com/236x/e6/ce/86/e6ce86216a5124c25e467785223c19f9.jpg",
-            "name": "Pro Staff",
-            "rating": 4.9,
-            "price": 250.00,
-            "description": "Professional tennis racket used by champions.",
-            "size": ["One Size"],
-            "colors": ["Black"],
-            "brand": "Wilson",
-            "category": "Rackets",
-            "onSale": "true"
-
           },
+          
           {
             "id": 16,
             "title": "Head Tennis Balls",
@@ -561,12 +560,12 @@
             "size": ["Standard"],
             "colors": ["Yellow"],
             "brand": "Head",
-            "category": "Balls"
+            "category": "Tools"
           },
           {
             "id":17,
             "title": "Nike Tennis Shoes",
-            "image": "https://i.pinimg.com/236x/80/7e/ae/807eae0731357f4f527263ac94c16bdc.jpg",
+            "image": "https://example.com/images/tennis-shoes.jpg",
             "name": "Court Lite",
             "rating": 4.8,
             "price": 120.00,
@@ -574,7 +573,7 @@
             "size": [40, 41, 42, 43],
             "colors": ["White", "Blue"],
             "brand": "Nike",
-            "category": "Shoes"
+            "category": "Sneakers"
           }
         ]
       },
@@ -620,9 +619,7 @@
             "size": ["S", "M", "L", "XL"],
             "colors": ["Blue", "Black"],
             "brand": "Speedo",
-            "category": "Clothing",
-            "onSale": "true"
-
+            "category": "Clothing"
           }
           ,{
             "id": 4,
@@ -648,9 +645,7 @@
             "size": ["S", "M", "L", "XL"],
             "colors": ["Blue", "Black"],
             "brand": "Speedo",
-            "category": "Clothing",
-            "onSale": "true"
-
+            "category": "Clothing"
           } ,
           {
             "id": 6,
@@ -689,9 +684,7 @@
             "size": ["S", "M", "L", "XL"],
             "colors": ["Blue", "Black"],
             "brand": "Speedo",
-            "category": "Clothing",
-            "onSale": "true"
-
+            "category": "Clothing"
           } ,{
             "id":9,
             "title": "Speedo Swimwear",
@@ -703,9 +696,7 @@
             "size": ["S", "M", "L", "XL"],
             "colors": ["Blue", "Black"],
             "brand": "Speedo",
-            "category": "Clothing",
-            "onSale": "true"
-
+            "category": "Clothing"
           } ,{
             "id": 10,
             "title": "Speedo Swimwear",
