@@ -102,21 +102,20 @@ body {
   color: #4caf50;
 }
 
-/* تصميم زر "More" ليكون دائري وصغير في أسفل الجهة اليمنى */
 .more-btn {
-  background-color: #4caf50; /* اللون الأخضر */
-  color: white; /* النص باللون الأبيض */
+  background-color: #4caf50; 
+  color: white; 
   border: none;
-  font-size: 2rem; /* زيادة حجم الخط ليكون السهم أكبر */
-  border-radius: 50%; /* جعل الزر دائري */
-  padding: 10px; /* زيادة الحشو لجعل الزر أكبر */
-  width: 35px; /* زيادة العرض */
-  height: 35px; /* زيادة الارتفاع */
-  position: absolute; /* وضع الزر في أسفل البطاقة */
-  bottom: 20px; /* المسافة من أسفل البطاقة */
-  right: 10px; /* المسافة من الجهة اليمنى */
+  font-size: 2rem;
+  border-radius: 50%;
+  padding: 10px; 
+  width: 35px; 
+  height: 35px; 
+  position: absolute; 
+  bottom: 20px;
+  right: 10px; 
   cursor: pointer;
-  text-align: center; /* محاذاة السهم في المنتصف */
+  text-align: center; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -124,7 +123,7 @@ body {
 }
 
 .more-btn:hover {
-  background-color: #388e3c; /* تغيير اللون عند التمرير */
+  background-color: #388e3c; 
 }
 
 .product-card {
@@ -139,7 +138,7 @@ body {
   box-shadow: 0 2px 4px rgba(19, 167, 46, 0.1);
   width: 280px;
   height: 400px;
-  position: relative; /* لضمان أن الزر في أسفل البطاقة */
+  position: relative; 
 }
 
 .product-card:hover {
@@ -201,7 +200,6 @@ aside li:hover {
   background-color: #e6f9e6; 
 }
 
-/* المنتجات */
 .products-container {
   width: 75%;
   padding: 20px;
@@ -215,7 +213,6 @@ aside li:hover {
   color: #333;
 }
 
-/* شبكة المنتجات */
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
