@@ -85,7 +85,7 @@ function Sale() {
                           </p>
                         </div>
                         <div className="d-flex justify-content-center w-100">
-                          <button>Buy Now</button>
+                          <button>Add to cart</button>
                         </div>
                       </div>
                     </div>
