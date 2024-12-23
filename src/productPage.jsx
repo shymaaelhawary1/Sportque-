@@ -10,7 +10,7 @@ const ProductPage = ({ category }) => {
   const [filteredByAside, setFilteredByAside] = useState([]);
   const [loading, setLoading] = useState(true);
   const [selectedAside, setSelectedAside] = useState(null);
-  const [searchTerm, setSearchTerm] = useState(""); // حالة لتخزين نص البحث
+  const [searchTerm, setSearchTerm] = useState(""); 
 
   const fetchProducts = async () => {
     try {
@@ -18,7 +18,7 @@ const ProductPage = ({ category }) => {
       const data = await response.json();
       console.log("Fetched data:", data);
       setProducts(data);
-      filterProductsByCategory(data, category); // تصفية المنتجات حسب الفئة
+      filterProductsByCategory(data, category); 
       setLoading(false);
     } catch (error) {
       console.error("Error fetching products:", error);
@@ -26,30 +26,26 @@ const ProductPage = ({ category }) => {
     }
   };
 
-  // تصفية المنتجات بناءً على الفئة المحددة
   const filterProductsByCategory = (allProducts, selectedCategory) => {
     const categoryData = allProducts.find(
       (product) => product.categoryName === selectedCategory
     );
     if (categoryData) {
-      setFilteredByAside(categoryData.items); // حفظ المنتجات حسب الفئة
-      setFilteredProducts(categoryData.items); // تعيين المنتجات المفلترة حسب الفئة
+      setFilteredByAside(categoryData.items); 
+      setFilteredProducts(categoryData.items); 
     } else {
       setFilteredProducts([]);
       setFilteredByAside([]);
     }
   };
 
-  // تصفية المنتجات بناءً على نص البحث
   const handleSearch = (event) => {
     const value = event.target.value;
     setSearchTerm(value);
 
     if (value === "") {
-      // إذا كان النص فارغًا، نعرض جميع المنتجات المفلترة حسب الفئة
       setFilteredProducts(filteredByAside);
     } else {
-      // إذا كان النص غير فارغ، نعرض المنتجات المصفاة بناءً على البحث
       const filtered = filteredByAside.filter((product) =>
         product.name.toLowerCase().includes(value.toLowerCase())
       );
@@ -72,7 +68,6 @@ const ProductPage = ({ category }) => {
 
   return (
     <div>
-      {/* App Bar */}
       <div className="app-bar">
         <h1>
           <span className="black">Sporti</span>
@@ -96,7 +91,7 @@ const ProductPage = ({ category }) => {
             type="text" 
             placeholder="Search for products..." 
             value={searchTerm}
-            onChange={handleSearch} // تحديث النص المدخل في مربع البحث
+            onChange={handleSearch} 
           />
         </div>
         <div className="cart-icon" onClick={() => alert("Cart clicked!")}>
@@ -116,12 +111,12 @@ const ProductPage = ({ category }) => {
                   <img src={product.image} alt={product.name} />
                   <h4>{product.name}</h4>
                   <ReactStars
-                    count={5} // عدد النجوم
-                    value={product.rating} // القيمة القادمة من API
-                    size={15} // حجم النجوم
-                    activeColor="#ffd700" // لون النجوم
-                    isHalf={true} // إذا كنت تريد السماح بنصف النجمة
-                    edit={false} // منع المستخدم من التعديل
+                    count={5} 
+                    value={product.rating} 
+                    size={15} 
+                    activeColor="#ffd700" 
+                    isHalf={true} 
+                    edit={false} 
                   />
                   <p className="new-price">${product.price}</p>
                   <button className="add-to-cart-btn">Add to Cart</button>

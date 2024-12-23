@@ -1,4 +1,3 @@
-/* التنسيق العام للصفحة */
 * {
   margin: 0;
   padding: 0;
@@ -103,13 +102,11 @@ body {
   color: #4caf50;
 }
 
-/* الحاوية الرئيسية */
 .container {
   display: flex;
   height: calc(100vh - 60px);
 }
 
-/* الشريط الجانبي */
 aside {
   width: 25%;
   background-color: #f0f3f6;
@@ -232,7 +229,6 @@ aside li:hover {
   background-color: #388e3c;
 }
 
-/* الرسالة عند عدم وجود منتجات */
 .no-products-message {
   text-align: center;
   font-size: 1.5rem;
@@ -248,7 +244,6 @@ aside li:hover {
   margin-left: 100px;
 }
 
-/* Media Queries لتحسين التوافق مع الشاشات الصغيرة */
 @media (max-width: 1024px) {
   .app-bar {
     padding: 10px 15px;
