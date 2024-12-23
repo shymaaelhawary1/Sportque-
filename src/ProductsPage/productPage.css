@@ -382,6 +382,82 @@ aside li:hover {
   }
 }
 
+@media (max-width: 768px) {
+  .app-bar {
+    padding: 8px;
+    height: 60px;
+  }
+
+  .app-bar h1 {
+    font-size: 1.2rem;
+  }
+
+  .search-box {
+    width: 50%;
+  }
+
+  aside {
+    width: 100%; 
+    height: auto;
+    position: relative;
+    top: 0;
+  }
+
+  .products-container {
+    margin-top: 70px;
+    padding: 10px;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr; 
+    gap: 10px;
+  }
+
+  .product-card {
+    width: 100%;
+    height: auto;
+  }
+
+  .no-products-message {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-bar {
+    padding: 5px;
+    height: 50px;
+  }
+
+  .app-bar h1 {
+    font-size: 1rem;
+  }
+
+  .bar button {
+    font-size: 0.8rem;
+  }
+
+  .search-box {
+    width: 70%;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr; 
+    gap: 5px;
+  }
+
+  .product-card {
+    width: 100%;
+    height: auto;
+  }
+
+  .no-products-message {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
 
 
 

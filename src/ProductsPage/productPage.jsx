@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
-import './ProductPage.css'; 
-import ReactStars from "react-rating-stars-component"; 
+import './ProductPage.css';
+import ReactStars from "react-rating-stars-component";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch, faShoppingCart, faUser } from '@fortawesome/free-solid-svg-icons';
+import { useNavigate } from 'react-router-dom';
 
 const ProductPage = ({ category }) => {
   const [products, setProducts] = useState([]);
@@ -10,7 +11,10 @@ const ProductPage = ({ category }) => {
   const [filteredByAside, setFilteredByAside] = useState([]);
   const [loading, setLoading] = useState(true);
   const [selectedAside, setSelectedAside] = useState(null);
-  const [searchTerm, setSearchTerm] = useState(""); 
+  const [searchTerm, setSearchTerm] = useState("");
+  const [cart, setCart] = useState([]);
+
+  const navigate = useNavigate();
 
   const fetchProducts = async () => {
     try {
@@ -18,7 +22,7 @@ const ProductPage = ({ category }) => {
       const data = await response.json();
       console.log("Fetched data:", data);
       setProducts(data);
-      filterProductsByCategory(data, category); 
+      filterProductsByCategory(data, category);
       setLoading(false);
     } catch (error) {
       console.error("Error fetching products:", error);
@@ -31,8 +35,8 @@ const ProductPage = ({ category }) => {
       (product) => product.categoryName === selectedCategory
     );
     if (categoryData) {
-      setFilteredByAside(categoryData.items); 
-      setFilteredProducts(categoryData.items); 
+      setFilteredByAside(categoryData.items);
+      setFilteredProducts(categoryData.items);
     } else {
       setFilteredProducts([]);
       setFilteredByAside([]);
@@ -53,6 +57,25 @@ const ProductPage = ({ category }) => {
     }
   };
 
+  const handleAddToCart = (product) => {
+    setCart((prevCart) => {
+      const existingProduct = prevCart.find((item) => item.id === product.id);
+
+      if (existingProduct) {
+        
+        return prevCart.map((item) =>
+          item.id === product.id
+            ? { ...item, quantity: item.quantity + 1 }
+            : item
+        );
+      } else {
+        return [...prevCart, { ...product, quantity: 1 }];
+      }
+    });
+
+    alert(`${product.name} has been added to the cart!`);
+  };
+
   useEffect(() => {
     fetchProducts();
   }, [category]);
@@ -65,6 +88,10 @@ const ProductPage = ({ category }) => {
       setFilteredProducts(filtered);
     }
   }, [selectedAside, filteredByAside]);
+
+  const handleCartClick = () => {
+    navigate("/cart", { state: { cart } });
+  };
 
   return (
     <div>
@@ -87,15 +114,18 @@ const ProductPage = ({ category }) => {
 
         <div className="search-box">
           <FontAwesomeIcon icon={faSearch} />
-          <input 
-            type="text" 
-            placeholder="Search for products..." 
+          <input
+            type="text"
+            placeholder="Search for products..."
             value={searchTerm}
-            onChange={handleSearch} 
+            onChange={handleSearch}
           />
         </div>
-        <div className="cart-icon" onClick={() => alert("Cart clicked!")}>
+        <div className="cart-icon" onClick={handleCartClick}>
           <FontAwesomeIcon icon={faShoppingCart} />
+          <span>
+            {cart.reduce((total, item) => total + item.quantity, 0)}
+          </span>
           <FontAwesomeIcon icon={faUser} />
         </div>
       </div>
@@ -111,20 +141,26 @@ const ProductPage = ({ category }) => {
                   <img src={product.image} alt={product.name} />
                   <h4>{product.name}</h4>
                   <ReactStars
-                    count={5} 
-                    value={product.rating} 
-                    size={15} 
-                    activeColor="#ffd700" 
-                    isHalf={true} 
-                    edit={false} 
+                    count={5}
+                    value={product.rating}
+                    size={15}
+                    activeColor="#ffd700"
+                    isHalf={true}
+                    edit={false}
                   />
                   <p className="new-price">${product.price}</p>
-                  <button className="add-to-cart-btn">Add to Cart</button>
-                  <button className="more-btn">›</button>                                   </div>
+                  <button
+                    className="add-to-cart-btn"
+                    onClick={() => handleAddToCart(product)}
+                  >
+                    Add to Cart
+                  </button>
+                  <button className="more-btn">›</button>
+                </div>
               ))
             ) : (
               <div className="no-products-message">
-              <p>Sorry, But This product isn't available Now</p>
+                <p>Sorry, But This product isn't available Now</p>
               </div>
             )}
           </div>
