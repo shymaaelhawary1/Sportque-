@@ -6,9 +6,11 @@
     margin: 15px auto;
   }
   .customer-section {
+    min-height: 60vh;
     background-color: #ffffff;
-    padding: 50px 0;
+    /* padding: 50px 0; */
   }
+ 
   .active{
     color: black;
   }

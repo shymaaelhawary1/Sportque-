@@ -25,12 +25,12 @@ padding: 10px;
 /* padding: 15px; */
 
 }
-.main .main-content .sign-in{
+.main .main-content .Confirm{
     display: flex;
     flex-direction: column;
     margin-top: 15%;
 }
-.main .main-content .sign-in .sign-in-content{
+.main .main-content .Confirm .Confirm-content{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,52 +38,15 @@ padding: 10px;
     margin-bottom: 10%;
 
 }
-.main .main-content .sign-in .sign-in-content h2{
-font-weight: bold;
 
-}
-.main .main-content .sign-in .sign-in-content p{
-    color: grey;
-}
-.main .main-content .sign-in .sign-in-content #sign-up{
+.forgetWord h2{
     color: var(--greenColor);;
     text-decoration: none;
     margin-left: 5px;
     font-weight: bold;
 }
-.sign-buttons{
-    display: flex;
-    justify-content: center;
-    gap: 5px;
-}
-.sign-buttons .google img, .sign-buttons .apple img{
-width: 15px;
-height: 15px;
-}
-.sign-buttons .google, .sign-buttons .apple{
-    font-weight: bold;
-    color: rgb(147, 146, 146);
-    padding: 10px 25px 10px 25px;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    border-radius: 10px;
-    background-color: white;
-    border: 0.5px solid rgb(224, 223, 223);
 
-}
-.OR{
-    display: flex;
-    width: 100%;
-    align-items: center;
-}
-.OR hr{
-    width: 50%;
-    margin: 20px 0 20px 0;
-}
-.OR span{
-    padding: 5px;
-}
+
 .inputs{
     display: flex;
     flex-direction: column; 
@@ -120,7 +83,7 @@ input[type='checkbox']{
     display: flex;
     gap: 5px;
 }
-.signInBtn{
+.ConfirmBtn{
     padding:5px;
     color: white;
     font-weight: bold;
@@ -131,10 +94,11 @@ input[type='checkbox']{
     align-self: center;
     padding: 7px 30px 7px 30px;
 }
-.signInBtn:hover{
+.Confirm:hover{
     background-color: rgb(1, 159, 1);
 }
 .error {
     color: red;
     font-size: 0.9rem;
+    /* margin-top: 2px; */
 }

@@ -1,16 +1,14 @@
-import  { Component } from 'react';
 import { Link } from "react-router-dom";
+import "./Navbar.css"
+function Navbar () {
 
-import "./Navbar.css";
-class Navbar extends Component {
-    state = {  } 
-    scrollToSection = (id) => {
-      const element = document.getElementById(id);
-      if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
-      }
-    };
-    render() { 
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+   
         return (
 
             <nav className="navbar navbar-expand-lg bg-body-tertiary  ">
@@ -27,16 +25,16 @@ class Navbar extends Component {
       <div className="offcanvas-body">
         <ul className="navbar-nav w-75 justify-content-center flex-grow-1 pe-3 fs-5 gap-5">
           <li className="nav-item">
-            <a className="nav-link " aria-current="page" href=""  onClick={() => this.scrollToSection("hero")}>Home</a>
+            <a className="nav-link " aria-current="page" href=""  onClick={() => scrollToSection("hero")}>Home</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#"  onClick={() => this.scrollToSection("Categories")}>Categories</a>
+            <a className="nav-link" href="#"  onClick={() => scrollToSection("Categories")}>Categories</a>
           </li>
           <li className="nav-item ">
-          <a className="nav-link" href="#" onClick={() => this.scrollToSection("brands")}>Brands</a></li>
+          <a className="nav-link" href="#" onClick={() => scrollToSection("brands")}>Brands</a></li>
             
             <li>
-            <a className="nav-link" href="#" onClick={() => this.scrollToSection("sale")}>Onsale</a>
+            <a className="nav-link" href="#" onClick={() => scrollToSection("sale")}>Onsale</a>
 
           </li>
         </ul>
@@ -45,7 +43,7 @@ class Navbar extends Component {
           <a className="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           <img src="/images/mdi_user-circle.svg" className='img-fluid' alt="" />
           </a>
-          <ul className="dropdown-menu ">
+          <ul className="dropdown-menu" >
             <li><Link to="/login" className="dropdown-item">Login</Link></li>
             <li><hr className="dropdown-divider"/></li>
             <li><a className="dropdown-item" href="#">Logout</a></li>
@@ -62,6 +60,6 @@ class Navbar extends Component {
         
         );
     }
-}
+
 
 export default Navbar;

@@ -16,6 +16,6 @@ transition: 0.3s;
     list-style-type: none;
 }
 .dropdown-menu {
---bs-dropdown-min-width:7rem;
---bs-dropdown-link-active-bg: var(--greenColor);
+    --bs-dropdown-min-width:9rem;
+    --bs-dropdown-link-active-bg: var(--greenColor);
 }

@@ -1,20 +1,18 @@
-import { Component } from "react";
 import "./Footer.css";
 
-class Footer extends Component {
-  render() {
-    return (
-      <div className="position-relative w-100 conn mt-5">
-        {/* Section Above Footer */}
-        <div className="d-flex justify-content-center align-items-center">
-          <div className="sub  d-flex justify-content-center align-items-center rounded-4 text-center ">
-            <h1>Stay Up To Date About Our Coming Available Sports</h1>
-          </div>
+function Footer() {
+  return (
+    <div className="position-relative w-100 conn mt-5">
+      {/* Section Above Footer */}
+      <div className="d-flex justify-content-center align-items-center">
+        <div className="sub d-flex justify-content-center align-items-center rounded-4 text-center">
+          <h1>Stay Up To Date About Our Coming Available Sports</h1>
         </div>
+      </div>
 
-        {/* Footer Section */}
-        <section className="footer w-100 position-relative">
-            <div className="container-fluid">
+      {/* Footer Section */}
+      <section className="footer w-100 position-relative">
+        <div className="container-fluid">
           <div className="footer-content">
             <div className="row text-center text-md-start mt-5">
               {/* Logo Section */}
@@ -92,11 +90,11 @@ class Footer extends Component {
             <p className="fw-bold mb-0">
               Copyright © 2023 Sportique. All rights reserved.
             </p>
-          </div></div>
-        </section>
-      </div>
-    );
-  }
+          </div>
+        </div>
+      </section>
+    </div>
+  );
 }
 
 export default Footer;

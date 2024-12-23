@@ -66,7 +66,7 @@
     height: 80%;
 }
 
-
+/* 
 .slider-container {
     width: 100%; 
     overflow: hidden; 
@@ -86,17 +86,38 @@
     .slider-image {
     width: 200px; 
     margin-right: 20px;   
-}
+} */
+
+.slider-container {
+    width: 100%; 
+    overflow: hidden; 
+    background-color: var(--greyColor); 
+    padding: 10px 0; 
+    position: relative;
+  }
+  
+  .slider-track {
+    display: flex;
+    justify-content: space-around; 
+    width: 100%; 
+    transition: transform 1s ease;
+    animation: moveSlider 15s linear infinite;
+
+  }
+  
+  .slider-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  
 
 
 @keyframes moveSlider {
     0% {
-    transform: translateX(0);   
-    }
-    50% {
-    transform: translateX(-30%);
+        transform: translateX(0);
     }
     100% {
-        transform: translateX(0%); 
+        transform: translateX(-1250px); /* Total width of 5 logos */
     }
 }

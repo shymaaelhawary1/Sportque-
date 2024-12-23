@@ -1,0 +1,11 @@
+
+.Confirm{
+    color: white;
+    font-weight: bold;
+    background-color: var(--greenColor);
+    border-radius: 8px;
+    border: var(--greenColor) 1px solid;
+    margin-bottom: 3%;
+    align-self: center;
+    padding: 7px 30px 7px 30px;
+}

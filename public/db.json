@@ -14,7 +14,8 @@
             "size": ["5"],
             "colors": ["White", "Black"],
             "brand": "Nike",
-            "category": "Balls"
+            "category": "Balls",
+            "onSale": "true"
           },
           {
             "id": 2,
@@ -40,7 +41,9 @@
             "size": ["M", "L", "XL"],
             "colors": ["Blue", "White"],
             "brand": "Puma",
-            "category": "Jerseys"
+            "category": "Jerseys",
+            "onSale": "true"
+
           },
           {
             "id": 4,
@@ -162,7 +165,9 @@
             "size": ["7"],
             "colors": ["Orange"],
             "brand": "Spalding",
-            "category": "Balls"
+            "category": "Balls",
+            "onSale": "true"
+
           },
           {
             "id": 2,
@@ -363,7 +368,9 @@
             "size": ["One Size"],
             "colors": ["Black"],
             "brand": "Wilson",
-            "category": "Rackets"
+            "category": "Rackets",
+            "onSale": "true"
+
           },
           {
             "id": 2,
@@ -412,7 +419,9 @@
             "size": ["One Size"],
             "colors": ["Black"],
             "brand": "Wilson",
-            "category": "Rackets"
+            "category": "Rackets",
+            "onSale": "true"
+
           },{
             "id": 6,
             "title": "Wilson Tennis Racket",
@@ -448,7 +457,9 @@
             "size": ["One Size"],
             "colors": ["Black"],
             "brand": "Wilson",
-            "category": "Rackets"
+            "category": "Rackets",
+            "onSale": "true"
+
           },{
             "id": 9,
             "title": "Wilson Tennis Racket",
@@ -484,7 +495,10 @@
             "size": ["One Size"],
             "colors": ["Black"],
             "brand": "Wilson",
-            "category": "Rackets"
+            "category": "Rackets",
+            "onSale": "true"
+
+
           },{
             "id": 12,
             "title": "Wilson Tennis Racket",
@@ -532,7 +546,9 @@
             "size": ["One Size"],
             "colors": ["Black"],
             "brand": "Wilson",
-            "category": "Rackets"
+            "category": "Rackets",
+            "onSale": "true"
+
           },
           {
             "id": 16,
@@ -576,7 +592,9 @@
             "size": ["One Size"],
             "colors": ["Blue", "Black"],
             "brand": "Speedo",
-            "category": "Accessories"
+            "category": "Accessories",
+            "onSale": "true"
+
           },
           {
             "id": 2,
@@ -602,7 +620,9 @@
             "size": ["S", "M", "L", "XL"],
             "colors": ["Blue", "Black"],
             "brand": "Speedo",
-            "category": "Clothing"
+            "category": "Clothing",
+            "onSale": "true"
+
           }
           ,{
             "id": 4,
@@ -628,7 +648,9 @@
             "size": ["S", "M", "L", "XL"],
             "colors": ["Blue", "Black"],
             "brand": "Speedo",
-            "category": "Clothing"
+            "category": "Clothing",
+            "onSale": "true"
+
           } ,
           {
             "id": 6,
@@ -667,7 +689,9 @@
             "size": ["S", "M", "L", "XL"],
             "colors": ["Blue", "Black"],
             "brand": "Speedo",
-            "category": "Clothing"
+            "category": "Clothing",
+            "onSale": "true"
+
           } ,{
             "id":9,
             "title": "Speedo Swimwear",
@@ -679,7 +703,9 @@
             "size": ["S", "M", "L", "XL"],
             "colors": ["Blue", "Black"],
             "brand": "Speedo",
-            "category": "Clothing"
+            "category": "Clothing",
+            "onSale": "true"
+
           } ,{
             "id": 10,
             "title": "Speedo Swimwear",

@@ -1,12 +1,9 @@
-import { Component } from 'react';
 import "./Reviews.css"
-class Reviews extends Component {
-    state = {  } 
-    render() { 
+function Reviews () {
         return (
             <section className="customer-section text-center">
-  <div className="container">
-    <h2 className="mb-5 fw-bold">Our Happy Customers</h2>
+  <div className=" container h-100 d-flex align-items-center flex-column">
+    <h2 className="mt-5 mb-5 fw-bold">Our Happy Customers</h2>
     <div id="customerCarousel" className="carousel slide" data-bs-ride="carousel">
       <div className="carousel-inner">
 
@@ -105,10 +102,11 @@ class Reviews extends Component {
       </button>
 
     </div>
+    
   </div>
 </section>
         );
     }
-}
+
  
 export default Reviews;

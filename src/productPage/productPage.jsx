@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import "./ProductPage.css";
 import 'font-awesome/css/font-awesome.min.css';
 
