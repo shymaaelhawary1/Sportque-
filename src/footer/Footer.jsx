@@ -2,7 +2,7 @@ import "./Footer.css";
 
 function Footer() {
   return (
-    <div className="position-relative w-100 conn mt-5">
+    <div className="position-relative w-100 conn mt-5 fixed-bottom">
       {/* Section Above Footer */}
       <div className="d-flex justify-content-center align-items-center">
         <div className="sub d-flex justify-content-center align-items-center rounded-4 text-center">
