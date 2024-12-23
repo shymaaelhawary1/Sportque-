@@ -120,7 +120,7 @@ const ProductPage = ({ category }) => {
                   />
                   <p className="new-price">${product.price}</p>
                   <button className="add-to-cart-btn">Add to Cart</button>
-                </div>
+                  <button className="more-btn">›</button>                                   </div>
               ))
             ) : (
               <div className="no-products-message">
