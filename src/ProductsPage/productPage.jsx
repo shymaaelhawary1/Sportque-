@@ -3,9 +3,10 @@ import './ProductPage.css';
 import ReactStars from "react-rating-stars-component";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch, faShoppingCart, faUser } from '@fortawesome/free-solid-svg-icons';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 
-const ProductPage = ({ category }) => {
+const ProductPage = () => {
+  const { category } = useParams();
   const [products, setProducts] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState([]);
   const [filteredByAside, setFilteredByAside] = useState([]);
@@ -56,26 +57,28 @@ const ProductPage = ({ category }) => {
       setFilteredProducts(filtered);
     }
   };
-
   const handleAddToCart = (product) => {
     setCart((prevCart) => {
       const existingProduct = prevCart.find((item) => item.id === product.id);
-
+  
+      let updatedCart;
       if (existingProduct) {
-        
-        return prevCart.map((item) =>
+        updatedCart = prevCart.map((item) =>
           item.id === product.id
             ? { ...item, quantity: item.quantity + 1 }
             : item
         );
       } else {
-        return [...prevCart, { ...product, quantity: 1 }];
+        updatedCart = [...prevCart, { ...product, quantity: 1 }];
       }
+  
+      localStorage.setItem("cart", JSON.stringify(updatedCart)); // تخزين السلة
+      return updatedCart;
     });
-
+  
     alert(`${product.name} has been added to the cart!`);
   };
-
+  
   useEffect(() => {
     fetchProducts();
   }, [category]);
@@ -89,45 +92,25 @@ const ProductPage = ({ category }) => {
     }
   }, [selectedAside, filteredByAside]);
 
-  const handleCartClick = () => {
-    navigate("/cart", { state: { cart } });
-  };
+  const handleMoreClick = (productId) => {
+navigate(`/product/${product.id}`, { state: { product } });  };
 
+
+const handleProductClick = (product) => {
+    
+  navigate(`/product/${product.id}`, { state: { product } });
+};
+  
   return (
     <div>
-      <div className="app-bar">
-        <h1>
-          <span className="black">Sporti</span>
-          <span className="green">que</span>
-        </h1>
-        <div className="bar">
-          {["Home", "Categories", "Brands", "Onsale"].map((section) => (
-            <button
-              key={section}
-              onClick={() => setCategory(section.toLowerCase())}
-              className={category === section.toLowerCase() ? "active" : ""}
-            >
-              {section}
-            </button>
-          ))}
-        </div>
-
-        <div className="search-box">
-          <FontAwesomeIcon icon={faSearch} />
-          <input
-            type="text"
-            placeholder="Search for products..."
-            value={searchTerm}
-            onChange={handleSearch}
-          />
-        </div>
-        <div className="cart-icon" onClick={handleCartClick}>
-          <FontAwesomeIcon icon={faShoppingCart} />
-          <span>
-            {cart.reduce((total, item) => total + item.quantity, 0)}
-          </span>
-          <FontAwesomeIcon icon={faUser} />
-        </div>
+      <div className="search-box">
+        <FontAwesomeIcon icon={faSearch} />
+        <input
+          type="text"
+          placeholder="Search for products..."
+          value={searchTerm}
+          onChange={handleSearch}
+        />
       </div>
 
       {loading ? (
@@ -135,9 +118,12 @@ const ProductPage = ({ category }) => {
       ) : (
         <div className="products-container">
           <div className="grid-container">
+
+
+
             {filteredProducts.length > 0 ? (
               filteredProducts.map((product) => (
-                <div key={product.id} className="product-card">
+                <div key={product.id} className="product-card"   onClick={() => handleProductClick(product)} >
                   <img src={product.image} alt={product.name} />
                   <h4>{product.name}</h4>
                   <ReactStars
@@ -155,7 +141,12 @@ const ProductPage = ({ category }) => {
                   >
                     Add to Cart
                   </button>
-                  <button className="more-btn">›</button>
+                  <button 
+                    className="more-btn" 
+                    onClick={() => handleMoreClick(product.id)}
+                  >
+                    ›
+                  </button>
                 </div>
               ))
             ) : (
@@ -183,9 +174,7 @@ const ProductPage = ({ category }) => {
                   onChange={() => setSelectedAside(cat)}
                   checked={selectedAside === cat}
                 />
-                <label htmlFor={cat}>
-                  {cat}
-                </label>
+                <label htmlFor={cat}>{cat}</label>
               </li>
             )
           )}

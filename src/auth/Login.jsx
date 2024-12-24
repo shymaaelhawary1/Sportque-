@@ -7,6 +7,8 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { useSelector } from "react-redux"; // استيراد useSelector
 import * as yup from "yup";
 
+import { useNavigate } from "react-router-dom";
+
 // إعداد التحقق باستخدام Yup
 const schema = yup.object().shape({
   email: yup.string().email("Invalid email").required("Email is required"),
@@ -14,6 +16,9 @@ const schema = yup.object().shape({
 });
 
 function Login() {
+  const navigator= useNavigate();
+
+
   const {
     register,
     handleSubmit,
@@ -29,11 +34,13 @@ function Login() {
   const onSubmit = (data) => {
     if (userInfo && data.email === userInfo.email && data.password === userInfo.password) {
       alert("Login Successful!");
-      console.log("Logged in as:", userInfo);
+      navigator("/");
     } else {
       alert("Invalid email or password. Please try again.");
     }
   };
+
+ 
 
   return (
     <div className="main">

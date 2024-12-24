@@ -17,12 +17,8 @@ const schema = yup.object().shape({
 });
 
 function Registration() {
-  const navigate = useNavigate();  
-  
-  const handleClickm = (data) => {
-      if( data.email !== '')
-              navigate("/login");  
-  };
+  const navigate = useNavigate();
+
   const {
     register,
     handleSubmit,
@@ -36,6 +32,8 @@ function Registration() {
   const onSubmit = (data) => {
     dispatch(saveUserData(data)); // إرسال البيانات إلى Redux
     alert("Registration Successful!");
+    navigate("/login");  
+
   };
 
 
@@ -102,7 +100,7 @@ function Registration() {
                   I agree to the terms and conditions
                 </label>
               </div>
-              <button type="submit" className="Confirm" onClick={handleClickm}>Sign Up</button>
+              <button type="submit" className="Confirm" >Sign Up</button>
             </div>
           </form>
         </div>
