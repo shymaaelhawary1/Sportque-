@@ -57,6 +57,7 @@ const ProductPage = () => {
       setFilteredProducts(filtered);
     }
   };
+
   const handleAddToCart = (product) => {
     setCart((prevCart) => {
       const existingProduct = prevCart.find((item) => item.id === product.id);
@@ -72,13 +73,17 @@ const ProductPage = () => {
         updatedCart = [...prevCart, { ...product, quantity: 1 }];
       }
   
-      localStorage.setItem("cart", JSON.stringify(updatedCart)); // تخزين السلة
+      localStorage.setItem("cart", JSON.stringify(updatedCart)); 
       return updatedCart;
     });
   
     alert(`${product.name} has been added to the cart!`);
   };
-  
+
+  const handleProductClick = (product) => {
+    navigate(`/product/${product.id}`, { state: { product } });
+  };
+
   useEffect(() => {
     fetchProducts();
   }, [category]);
@@ -92,15 +97,6 @@ const ProductPage = () => {
     }
   }, [selectedAside, filteredByAside]);
 
-  const handleMoreClick = (productId) => {
-navigate(`/product/${product.id}`, { state: { product } });  };
-
-
-const handleProductClick = (product) => {
-    
-  navigate(`/product/${product.id}`, { state: { product } });
-};
-  
   return (
     <div>
       <div className="search-box">
@@ -118,12 +114,9 @@ const handleProductClick = (product) => {
       ) : (
         <div className="products-container">
           <div className="grid-container">
-
-
-
             {filteredProducts.length > 0 ? (
               filteredProducts.map((product) => (
-                <div key={product.id} className="product-card"   onClick={() => handleProductClick(product)} >
+                <div key={product.id} className="product-card">
                   <img src={product.image} alt={product.name} />
                   <h4>{product.name}</h4>
                   <ReactStars
@@ -141,9 +134,9 @@ const handleProductClick = (product) => {
                   >
                     Add to Cart
                   </button>
-                  <button 
-                    className="more-btn" 
-                    onClick={() => handleMoreClick(product.id)}
+                  <button
+                    className="more-btnn"
+                    onClick={() => handleProductClick(product)}
                   >
                     ›
                   </button>

@@ -15,17 +15,14 @@ const Cart = () => {
     }
   }, []);
   
-  // Calculate the total price of the cart
   const calculateTotal = () =>
     cart.reduce((total, item) => total + item.price * item.quantity, 0);
 
-  // Remove a product from the cart
   const handleRemove = (index) => {
     const updatedCart = cart.filter((_, i) => i !== index);
     setCart(updatedCart);
   };
 
-  // Checkout process
   const handleCheckout = async () => {
     setLoading(true);
     try {
@@ -49,7 +46,7 @@ const Cart = () => {
 
       const data = await response.json();
       const { url } = data;
-      window.location = url; // Redirect the user to the payment page
+      window.location = url; 
     } catch (error) {
       console.error('Error during checkout:', error);
       setError('An error occurred during checkout. Please try again.');
